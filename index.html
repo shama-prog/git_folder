@@ -7,5 +7,51 @@
 <body>
 	<h1>This is my first git hub page.</h1>
 	<p>This paragraph shows us how to use git and git command and how to push project to remote repository.</p>
+	<h2>Git Commands</h2>
+	<h3>How to check git status</h3>
+	<p>git status to check the status. git commit is used for commit the file.and git add file name is used for add the file.</p>
+	<h3>initialize the git repository</h3>
+	<p>git init is used for initialize the gir repository and create .git folder with following files.
+		$ cd /home
+        $ git init</p>
+  <h3>Displaying Differences with Git Diff</h3>
+  <p>The git diff filename command will display the differences between the working directory and the staging area in one specific file. Use git diff filename before adding new content to ensure that you are making the changes you expect. $ git diff hello.txt</p>
+  <h3>git commit log</h3>
+  <p>$ git log. show all the commits log of the project.</p>
+  <h3>Committing Your Code</h3>
+  <p>$ git commit -m "Added About section to README".The git commit -m "log message here" command creates a new commit containing:The current contents of the staging area.A log message describing the changes to the repository</p>
+  <h3>Adding Changes to the Staging Area</h3>
+  <p>The git add filename command is used to add the filename file to the staging area. After your changes have been staged, you can use the git commit command to permanently store your changes. $ git add file.txt then $ git status</p>
+  <h3>Showing Latest Commit Log</h3>
+<p>In Git, the commit you are currently on is known as the HEAD commit.
+
+The output of the git show HEAD command will display everything the git log command displays for the HEAD commit, plus all the file changes that were committed. $ git show HEAD.</p>
+<h3>Git Reset Using SHA</h3>
+<p>In Git, the git reset commit_SHA command can be used to set HEAD to the commit_SHA commit. The commit_SHA argument is the first seven digits of a previous commit’s SHA. In this example, the HEAD was reset to the commit made on Wed Jan 6.
+
+You can use git log to see a record of previous commits and their SHA values.</p>
+<h3>Staging Multiple Files</h3>
+<p>add more then one files $ git add file1.txt file2.txt and. $ git status to check the status.</p>
+<h3>Remove File from Staging</h3>
+<p>In Git, the git reset HEAD filename command will remove filename from the staging area.$ git reset HEAD fiel1.txt</p>
+<h3>Rolling Back to Last Commit</h3>
+<p>In Git, the git checkout HEAD filename command rolls back all changes that have been made to filename since the last commit. $ git checkout HEAD scene-5.txt and $ git diff for check difference.</p>
+<h3>git branches</h3>
+<p>$ git branch to use to check which branch you are in.</p>
+<h3>create new branch</h3>
+<p>$ git branch new-feature </p>
+<h3>view the current branch</h3>
+<p>Viewing the Current Branch
+In Git, the git branch command will display all of the branches. The current branch will display * before its name.</p>
+<h3>Merge Conflicts</h3>
+<p>In Git, a merge conflict occurs when the same file is changed on the current branch and the branch that is being merged. An error will appear displaying: CONFLICT (content): Merge conflict in [filename].
+
+Git will automatically edit the file with the conflict to show where the conflict is. The current branch’s text will be between <<<<<<< HEAD and =======. The text from the branch that is being merged into the current branch will be between ======= and >>>>>>> branch-name
+
+To resolve a merge conflict, edit the file with the conflict, decide which parts of each branch’s edits should be kept, then add and commit the file.</p>
+<h3>Delete branch</h3>
+<p>In Git, the git branch -d branch_name command is used to delete the branch_name branch. It’s good practice to delete a branch after it has been merged into the master branch. $ git branch -d new-feature</p>
+<h3>Merging Branches</h3>
+<p>In Git, the git merge branch-name command will add the changes from branch-name into the current branch. Use this command when you have finished building a feature in a separate branch and want to bring those changes into your current branch.</p>
 </body>
 </html>
